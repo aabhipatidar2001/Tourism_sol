@@ -15,3 +15,8 @@ th
 	background-color: lightblue;
 	color : darkred;
 }
+
+td
+{
+	color : gray;
+}
