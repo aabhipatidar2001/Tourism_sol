@@ -1,0 +1,17 @@
+*
+{
+	box-sizing: border-box;
+}
+
+table
+{
+	background-color: lightgray;
+	color: blueviolet;
+	border-radius: 12px;
+}
+
+th
+{
+	background-color: lightblue;
+	color : darkred;
+}

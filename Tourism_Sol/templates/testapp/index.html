@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tourism Solution</title> 
+	<link rel="stylesheet" type="text/css" href="{% static "css/index.css"%}">
+</head>
+<body>
+	<h1>Hello World! this is From Django Site Good s </h1><br><br>
+
+<center>
+	{% if user %}
+	<table border="3px" cellpadding="10px" cellspacing="3px">
+		<tr>
+			<th>Name</th>
+			<th>Contact</th>
+			<th>Email</th>
+		</tr>
+	{% for e in user %}
+			<tr>
+				<td>{{e.name}}</td>
+				<td>{{e.contact}}</td>
+				<td>{{e.email}}</td>
+			</tr>
+		{% endfor %}
+	</table>	
+	{% else %}
+			<h1>Not Available</h1>
+	{% endif %}
+
+	</center>
+</body>
+</html>
