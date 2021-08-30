@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
 	<title>Tourism Solution</title> 
 	<link rel="stylesheet" type="text/css" href="{% static "css/index.css"%}">
+	<script type="text/javascript" src="{% static "javascript/index.js" %}"></script>
 </head>
-<body>
-	<h1>Hello World! this is From Django Site Good s </h1><br><br>
+<body onload = "on_load()">
+	<h1 onclick="show_move()">Hello World! this is From Django Site Good s </h1><br><br>
 
 <center>
 	{% if user %}

@@ -5,4 +5,7 @@ from testapp.models import User
 class UserAdmin(admin.ModelAdmin):
 		list_display = ['id','name','email','contact','addr']
 
+class Register(admin.ModelAdmin):
+	list_display = ['id','name','author']
+
 admin.site.register(User,UserAdmin)
